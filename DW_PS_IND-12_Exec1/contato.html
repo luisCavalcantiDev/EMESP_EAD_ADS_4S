@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Eco Galera</title>
+	<link rel="stylesheet" href="css/style.css"/>
+	<script type="text/javascript">
+
+		function valida(aForm){
+			if(aForm.oNome.value == ""){
+				alert("É obrigatório informar o NOME");
+				aForm.oNome.focus();
+
+				return (false);
+			}
+
+			if(aForm.oFone.value == ""){
+				alert("É obrigatório informar o TELEFONE");
+				aForm.oFone.focus();
+
+				return (false);
+			}
+
+			if(aForm.oEmail.value == ""){
+				alert("É obrigatório informar o EMAIL");
+				aForm.oEmail.focus();
+
+				return (false);
+			}
+
+			if(aForm.oArea.value == "*"){
+				alert("Selecione uma área de contato");
+				aForm.oArea.focus();
+
+				return (false);
+			}
+
+			if(aForm.oMsg.value == ""){
+				alert("Informe o MOTIVO de seu contato");
+				aForm.oMsg.focus();
+
+				return (false);
+			}
+
+			return (true);
+		}
+
+	</script
+</head>
+<body><center>
+	<div id="container">
+		<!-- Area de cabeçalho -->
+		<!--Area de apresentação do logo da empresa-->
+		<div id="topo">
+		</div>
+		<div id="links">
+			<a href="index.html" class="linkespaco">Home</a></li>
+			<a href="contato.html" class="linkespaco">Contato</a></li>
+		</div>
+		<!-- fim do cabeçalho -->
+		<!-- Quadro ESQUERDO de informações -->
+		<div id="meio_esq">
+			<h1 class="styleTitulo">Contato</h1>
+			<p class="style1">&nbsp;</p>
+			<p class="style1">Utilize o formul&aacute;rio abaixo para entrar em contato conosco</p>
+			<p class="style1">&nbsp;</p>
+			<form method="post" action="http://ecogalera.br/recebecontato.aspx" onsubmit="return valida(this);">
+				<table width="400" border="0">
+					<tr>
+						<td colspan="2" class="styleTituloFundo">
+							Informações Pessoais</td>
+						</tr>
+						<tr>
+							<td width="112" align="right">Nome:</td>
+							<td width="278">
+								<input name="oNome" type="text" size="40" id="oNome" /> </td>
+							</tr>
+							<tr>
+								<td align="right">DDD/Telefone:</td>
+								<td><input name="oFone" type="text" size="20" id="oFone" />
+								</td>
+							</tr>
+							Universidade Metodista de São Paulo
+							148
+							<tr>
+								<td align="right">Email:</td>
+								<td><input name="oEmail" type="text" size="40" id="oEmail" />
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2" class="styleTituloFundo">Área de Contato</td>
+							</tr>
+							<tr>
+								<td align="right">Área:</td>
+								<td><select name="oArea" id="oArea">
+									<option value="*" selected>Selecione</option>
+									<option value="P">Pesquisa</option>
+									<option value="A">Ambiental</option>
+									<option value="M">Marketing</option>
+								</select></td>
+							</tr>
+							<tr>
+								<td align="right">Motivo do contato:</td>
+								<td><textarea name="oMsg" cols="30" rows="4" id="oMsg"> </textarea></td>
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+									<td><input type="submit" name="Enviar" value="Enviar" /> <input
+										name="reset" type="reset" value="Apagar "/></td>
+									</tr>
+								</table>
+							</form>
+						</div>
+						<!-- fim do quadro esquerdo -->
+						<!-- Quadro DIREITO de informações -->
+						<div id="meio_dir">
+							<p>&nbsp;</p>
+						</div>
+						<!-- fim do quadro direito-->
+						<!-- Area de rodapé-->
+						<div id="rodape">
+							<p align="center">Copyright EcoGalera, 2013.
+								Todos os direitos reservados.</p>
+							</div>
+							<!-- fim do rodapé -->
+						</div>
+					</center>
+				</body>
+				</html>

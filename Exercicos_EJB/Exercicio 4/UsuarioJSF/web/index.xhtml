@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+  <h:head>
+    <title>Cadastro de Usuário</title>
+  </h:head>
+  <h:body>
+    <h1>Cadastro de Usuário</h1>
+    <h:form>
+      <h:panelGrid columns="3">
+        <h:outputText id="idUsuario" value="Id: "/>
+        <h:inputText id="id" value="#{usuarioMB.usuarioId}" maxlength="10"/>
+        <h:commandButton id="botaoPesquisar" value="Pesquisar" action="#{usuarioMB.pesquisar}"/>
+      </h:panelGrid>
+      <br/>
+      <h:messages/>
+      <br/>
+      <h:panelGrid columns="2">
+        <h:outputText id="nomeUsuario" value="Nome: "/>
+        <h:inputText id="nome" value="#{usuarioMB.usuario.nome}" maxlength="50"/>
+        <h:outputText id="loginUsuario" value="Login: "/>
+        <h:inputText id="login" value="#{usuarioMB.usuario.login}" maxlength="20"/>
+        <h:outputText id="senhaUsuario" value="Senha: "/>
+        <h:inputSecret id="senha" value="#{usuarioMB.usuario.senha}" maxlength="20"/>
+        <h:outputText id="perfilUsuario" value="Perfil: "/>
+        <h:inputText id="perfil" value="#{usuarioMB.usuario.perfil}" maxlength="20"/>
+      </h:panelGrid>
+      <br/>
+      <h:commandButton id="botaoSalvar" value="Salvar" action="#{usuarioMB.salvar}"/>
+      <h:commandButton id="botaoRemover" value="Remover" action="#{usuarioMB.remover}"/>
+      <h:commandButton id="botaoNovo" value="Novo" action="#{usuarioMB.novo}"/>
+    </h:form>
+  </h:body>
+</html>
+

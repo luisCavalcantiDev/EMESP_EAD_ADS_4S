@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/> 
+		<link rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/funcoes.js"></script>
+		<title>Cadastro de Contatos</title>
+	</head>
+	<body>
+		<h3>Sistema Cadastro de Contatos - v1.0</h3>
+		<form id="frmContato" method="post" onsubmit="return valida(this);">
+			<table>
+			  <tr>
+					<td>Nome:</td>
+					<td>  
+						<input name="oNome" type="text" size="35" id="oNome" />
+				   </td>
+			   </tr>
+			   <tr>
+					<td>DDD/Telefone:</td>
+					<td>
+						<input name="oFone" type="text" size="35" id="oFone" /> 
+					</td>
+			   </tr>
+			   <tr>
+					<td>Idade:</td>
+					<td>
+						<input name="oIdade" type="text" size="35" id="oIdade" /> 
+					</td>
+			   </tr>
+			   <tr>
+					<td>CEP:</td>
+					<td>
+						<input name="oCep" type="text" size="35" id="oCep" /> 
+					</td>
+			   </tr>
+				<tr>
+					<td>Email:</td>
+					<td>
+						<input name="oEmail" type="text" size="35" id="oEmail" /> 
+					</td>
+				</tr>
+				<tr>
+				<td>CPF:</td>
+					<td>
+						<input name="oCpf" type="text" size="35" id="oCpf" />
+					</td>
+			   </tr>
+			   <tr>
+					<td>RG:</td>
+					<td>
+						<input name="oRg" type="text" size="35" id="oRg" /> 
+					</td>
+			   </tr>
+			   <tr>
+					<td>Endereço:</td>
+					<td>
+						<input name="oEndereco" type="text" size="35" id="oEndereco" />
+					</td>
+			   </tr>
+			   <tr>
+					<td>Bairro:</td>
+					<td>
+						<input name="oBairro" type="text" size="35" id="oBairro" /> 
+					</td>
+			   </tr>
+			   <tr>
+					<td>Cidade:</td>
+					<td>
+						<input name="oCidade" type="text" size="35" id="oCidade" />
+					</td>
+			   </tr>
+			   <tr>
+					<td>Estado:</td>
+					<td>
+						<input name="oEstado" type="text" size="35" id="oEstado" />
+					</td>
+			   </tr>
+			   <tr>
+					<td>País:</td>
+					<td>
+						<input name="oPais" type="text" size="35" id="oPais" />
+					</td>
+			   </tr>
+			   <tr>
+					<td>Escolaridade:</td>
+					<td>
+						<input name="oEscolaridade" type="text" size="35" id="oEscolaridade" />
+					</td>
+			   </tr>
+			   <tr>
+					<td>Escolas:</td>
+					<td>
+						<input name="oEscolas" type="text" size="35" id="oEscolas" />
+					</td>
+			   </tr>
+			   <tr>
+					<td>
+						<input type="submit" name="btnEnviar" value="Enviar Dados">
+					</td>
+					<td>
+						<input name="reset" type="reset" value="Limpar Formulario"/>
+					</td>
+				</tr>
+           </table>
+		</form>
+	</body>
+</html>
